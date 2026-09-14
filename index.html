@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Image Gallery</h1>
+            <p>Explore beautiful moments</p>
+        </div>
+    </header>
+
+
+    <!-- Filter Buttons -->
+    <section class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="travel">Travel</button>
+        <button class="filter-btn" data-filter="animals">Animals</button>
+        <button class="filter-btn" data-filter="city">City</button>
+    </section>
+
+
+    <!-- Gallery -->
+    <main class="gallery">
+
+        <div class="gallery-item" data-category="nature">
+            <img src="images/nature1.jpg" alt="Nature">
+            <div class="overlay">
+                <h3>Beautiful Nature</h3>
+                <span>Nature</span>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+            <img src="images/nature2.jpg" alt="Mountain">
+            <div class="overlay">
+                <h3>Mountain View</h3>
+                <span>Nature</span>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="travel">
+            <img src="images/travel1.jpg" alt="Travel">
+            <div class="overlay">
+                <h3>Travel Adventure</h3>
+                <span>Travel</span>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="travel">
+            <img src="images/travel2.jpg" alt="Beach">
+            <div class="overlay">
+                <h3>Beach Escape</h3>
+                <span>Travel</span>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="animals">
+            <img src="images/animal1.jpg" alt="Animal">
+            <div class="overlay">
+                <h3>Wild Life</h3>
+                <span>Animals</span>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="animals">
+            <img src="images/animal2.jpg" alt="Dog">
+            <div class="overlay">
+                <h3>Lovely Animal</h3>
+                <span>Animals</span>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="city">
+            <img src="images/city1.jpg" alt="City">
+            <div class="overlay">
+                <h3>City Lights</h3>
+                <span>City</span>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="city">
+            <img src="images/city2.jpg" alt="Building">
+            <div class="overlay">
+                <h3>Modern City</h3>
+                <span>City</span>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+
+        <button class="close" id="closeBtn">&times;</button>
+
+        <button class="nav-btn prev" id="prevBtn">&#10094;</button>
+
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="Gallery Image">
+            <h3 id="lightboxTitle"></h3>
+        </div>
+
+        <button class="nav-btn next" id="nextBtn">&#10095;</button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
